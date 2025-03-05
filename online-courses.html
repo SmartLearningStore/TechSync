@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff0000, #ff7300, #ffcc00, #33cc33, #0099ff, #6633cc);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        .header p {
+            font-size: 1.5rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .course-card {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .course-card i {
+            font-size: 40px;
+            color: #ffcc00;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .course-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .buy-btn {
+            background-color: #ffcc00;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .buy-btn:hover {
+            background-color: #e6b800;
+        }
+
+        .next-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .next-btn:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Online Courses</h1>
+        <p>Explore and enhance your skills with our expert-led courses</p>
+    </div>
+
+    <div class="container">
+        <!-- Ethical Hacking Course -->
+        <div class="course-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Ethical Hacking</h3>
+            <p>Learn ethical hacking techniques and safeguard the digital world.</p>
+            <p class="price">$250</p>
+            <a href="payment.html?product=ethical-hacking&price=250" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- CPA Marketing Course -->
+        <div class="course-card">
+            <i class="fas fa-bullhorn"></i>
+            <h3>CPA Marketing</h3>
+            <p>Master the art of CPA marketing to earn through affiliate marketing.</p>
+            <p class="price">$300</p>
+            <a href="payment.html?product=cpa-marketing&price=300" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- SEO Marketing Course -->
+        <div class="course-card">
+            <i class="fas fa-chart-line"></i>
+            <h3>SEO Marketing</h3>
+            <p>Become an expert in SEO and rank websites higher on search engines.</p>
+            <p class="price">$200</p>
+            <a href="payment.html?product=seo-marketing&price=200" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Freelancing Course -->
+        <div class="course-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Freelancing</h3>
+            <p>Start your freelancing career and learn how to get clients effectively.</p>
+            <p class="price">$220</p>
+            <a href="payment.html?product=freelancing&price=220" class="buy-btn">Buy Now</a>
+        </div>
+
+        <!-- Facebook Login Course -->
+        <div class="course-card">
+            <i class="fas fa-sign-in-alt"></i>
+            <h3>Facebook Login</h3>
+            <p>Learn how to integrate Facebook login into your applications.</p>
+            <p class="price">$2</p>
+            <a href="payment.html?product=facebook-login&price=2" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="next-btn">
+        <a href="online-courses2.html" class="next-btn">Next</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 TechSync. All rights reserved.</p>
+        <nav>
+            <a href="about-us.html">About</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms</a>
+            <a href="contact-us.html">Contact</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
